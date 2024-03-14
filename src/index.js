@@ -37,6 +37,14 @@ function createWeather(data) {
   };
 }
 
+const locationForm = document.querySelector('#location-form');
+const searchbar = locationForm.querySelector('#searchbar');
+
+locationForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+  console.log('sucess');
+});
+
 const location = 'Singapore';
 const currentWeatherData = await getCurrentWeatherData(location);
 const weather = createWeather(currentWeatherData);
