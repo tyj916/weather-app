@@ -19,6 +19,21 @@ body {
   color: white;
 }
 
+#weather-app #location-form #searchbar,
+#weather-app #location-form button {
+  border: none;
+  border-radius: 4px;
+  padding: 4px;
+}
+
+#weather-app #location-form #searchbar {
+  margin-right: 4px;
+}
+
+#weather-app #location-form button:hover {
+  cursor: pointer;
+}
+
 #weather-app #weather-condition-container {
   display: grid;
   grid-template-columns: auto auto 1fr;
