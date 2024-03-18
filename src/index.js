@@ -10,6 +10,7 @@ async function getCurrentWeatherData(location = 'Singapore') {
     return response.json();
   } catch (err) {
     console.error(err);
+    return err;
   }
 }
 
@@ -199,7 +200,6 @@ locationForm.addEventListener('submit', (e) => {
     .catch((err) => console.error(err));
 });
 
-const location = 'Thailand';
-const currentWeatherData = await getCurrentWeatherData(location);
+const currentWeatherData = await getCurrentWeatherData('Thailand');
 const weather = createWeather(currentWeatherData);
 weather.render();
