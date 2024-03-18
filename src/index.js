@@ -92,11 +92,17 @@ function createWeather(data) {
 
     subContainer.id = 'sub-data';
     airQualityContainer.className = 'data-container';
+    airQualityLabel.className = 'data-label';
     windContainer.className = 'data-container';
+    windLabel.className = 'data-label';
     humidityContainer.className = 'data-container';
+    humidityLabel.className = 'data-label';
     visibilityContainer.className = 'data-container';
+    visibilityLabel.className = 'data-label';
     pressureContainer.className = 'data-container';
+    pressureLabel.className = 'data-label';
     UVContainer.className = 'data-container';
+    UVLabel.className = 'data-label';
 
     locationEl.textContent = location.region
       ? `${location.name}, ${location.region}, ${location.country}`
