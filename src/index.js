@@ -104,7 +104,7 @@ function createWeather(data) {
     lastUpdateEl.textContent = `Last updated: ${current.last_updated}`;
     tempEl.textContent = `${current.temp_c}°C`;
     conditionEl.textContent = current.condition.text;
-    feelsLikeEl.textContent = current.feelslike_c;
+    feelsLikeEl.textContent = `Feels like ${current.feelslike_c}°C`;
     airQualityLabel.textContent = 'Air Quality';
     airQualityEl.textContent = getAirQuality();
     windLabel.textContent = 'Wind';
